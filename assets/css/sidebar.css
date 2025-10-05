@@ -1,0 +1,45 @@
+:root{
+    --sidebar-bg: rgb(50,50,50);
+    --sidebar-portfolio-bg: rgb(151, 78, 78);
+    --sidebar-nombre-bg: rgba(180,88,88);
+
+}
+
+.sidebar{
+    position: fixed;
+    width: 25vw;
+    height: 100vh;
+    background-color: var(--sidebar-bg);
+    border-radius: 0 2vw 2vw 0;
+    box-shadow: rgba(0,0,0,0.5) .2vw 0 1vw;
+    z-index: 1001;
+
+    > .portfolio {
+        background-color: var(--sidebar-portfolio-bg);
+        width: 100%;
+        height: 6.5vh;
+        border-radius: 0 2vw 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Tomorrow';
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.2vw;
+        color: beige;
+    }
+
+    > .nombre{
+        background-color: var(--sidebar-nombre-bg);
+        width: 100%;
+        height: 3vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Tomorrow';
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: .8vw;
+        color: white;
+    }
+}

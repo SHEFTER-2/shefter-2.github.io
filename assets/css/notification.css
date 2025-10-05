@@ -1,5 +1,5 @@
 :root{
-    --notification-bg: rgba(180,88,88,1);
+    --notification-bg: rgba(180,88,88);
     --notification-txt: rgb(211, 211, 211);
     --notification-cross-bg: rgb(155, 74, 74);
     --notification-cross-txt: rgb(199, 199, 199);
@@ -17,16 +17,18 @@
     font-weight: 700;
     font-family: 'Quicksand';
     font-size: 1vw;
+    z-index: 1002;
     
     width: 100vw;
-    height: auto;
+    height: 6.5vh;
     
-    border-radius: .5vw;
     padding: 1vw 2vw 1vw 2vw;
     
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    box-shadow: rgba(0, 0, 0, 1) 0 -.3vw 1vw;
     
     > a{
         background-color: var(--notification-cross-bg);
@@ -65,7 +67,7 @@
     }
     
     &.visible-no{
-        transform: translateY(-100%);
+        transform: translateY(-150%);
         transition: all ease-in-out .2s;
     }
 }
@@ -80,7 +82,7 @@
     
     opacity: 0;
     pointer-events: none;
-    z-index: 1001;
+    z-index: 1003;
 
     transition: opacity 0.3s ease;
 

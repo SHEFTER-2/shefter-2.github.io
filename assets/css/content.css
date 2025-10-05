@@ -1,0 +1,9 @@
+:root{
+    --content-bg: rgb(100, 100, 100);
+}
+
+.content{
+    background-color: var(--content-bg);
+    width: 75vw;
+    height: 150vh;
+}
