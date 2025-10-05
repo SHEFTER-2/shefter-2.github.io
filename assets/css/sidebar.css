@@ -1,22 +1,27 @@
-:root{
-    --sidebar-bg: rgb(50,50,50);
+:root {
+    --sidebar-bg: rgb(50, 50, 50);
     --sidebar-portfolio-bg: rgb(151, 78, 78);
-    --sidebar-nombre-bg: rgba(180,88,88);
-
+    --sidebar-nombre-bg: rgba(180, 88, 88);
+    --sidebar-description-bg: rgb(35, 35, 35);
 }
 
-.sidebar{
+.sidebar {
     position: fixed;
+    display: flex;
+    left: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 25vw;
     height: 100vh;
     background-color: var(--sidebar-bg);
     border-radius: 0 2vw 2vw 0;
-    box-shadow: rgba(0,0,0,0.5) .2vw 0 1vw;
+    box-shadow: rgba(0, 0, 0, 0.5) .2vw 0 1vw;
     z-index: 1001;
 
-    > .portfolio {
+    >.header>.portfolio {
         background-color: var(--sidebar-portfolio-bg);
-        width: 100%;
+        width: 25vw;
         height: 6.5vh;
         border-radius: 0 2vw 0 0;
         display: flex;
@@ -29,9 +34,9 @@
         color: beige;
     }
 
-    > .nombre{
+    >.header>.nombre {
         background-color: var(--sidebar-nombre-bg);
-        width: 100%;
+        width: 25vw;
         height: 3vh;
         display: flex;
         justify-content: center;
@@ -42,4 +47,136 @@
         font-size: .8vw;
         color: white;
     }
+
+    >.contacto{
+        background-color: var(--sidebar-description-bg);
+        width: 85%;
+        height: auto;
+        padding: 1vw 2vw;
+        border-radius: 1vw;
+        color: #ccc;
+        font-family: 'quicksand';
+        font-size: 1vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    >.description {
+        background-color: var(--sidebar-description-bg);
+        width: 85%;
+        height: auto;
+        padding: 1vw 2vw;
+        border-radius: 1vw;
+        color: #ccc;
+        font-family: 'quicksand';
+        font-size: 1vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    >.description>p{
+        padding: .5vw 0;
+    }
+
+    >.skills {
+        background-color: var(--sidebar-description-bg);
+        width: 85%;
+        height: auto;
+        padding: 1vw 2vw;
+        border-radius: 1vw;
+        color: #ccc;
+        display: flex;
+        font-family: 'quicksand';
+        font-weight: 700;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    >.skills>.skill-lang {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    >.skills>.skill-lang>span{
+        font-size: .6vw;
+    }
+
+    >.skills>.skill-lang>.skill-name{
+        width: 4vw;
+        font-size: 1vw;
+    }
+
+    .progress-container {
+        width: 11vw;
+        background-color: #e0e0e0;
+        border-radius: 1vw;
+        overflow: hidden;
+    }
+
+    .progress-bar {
+        height: 1vh;
+        text-align: right;
+        line-height: 1vh;
+        color: white;
+        padding-right: 0;
+        transition: width 1s ease-in-out;
+    }
+
+    .html-bar {
+        width: 90%;
+        background-color: #ff5722;
+    }
+
+    .css-bar {
+        width: 80%;
+        background-color: #2196f3;
+    }
+
+    .python-bar {
+        width: 50%;
+        background-color: #4caf50;
+    }
+
+    .sql-bar {
+        width: 50%;
+        background-color: #9c27b0;
+    }
+
+    >.sidebar-footer>.detalles{
+        background-color: var(--sidebar-nombre-bg);
+        width: 25vw;
+        height: 3vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Tomorrow';
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: .8vw;
+        color: white;
+    }
+    >.sidebar-footer>.links{
+        background-color: var(--sidebar-portfolio-bg);
+        width: 25vw;
+        height: 6.5vh;
+        border-radius: 0 0 2vw 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Tomorrow';
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.2vw;
+        color: beige;
+    }
+
 }

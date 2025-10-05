@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,32 +10,137 @@
     <link rel="stylesheet" href="./assets/css/notification.css">
     <link rel="stylesheet" href="./assets/css/sidebar.css">
     <link rel="stylesheet" href="./assets/css/content.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">
 
     <!--FontAwesome Script-->
     <script src="https://kit.fontawesome.com/58281e3fd2.js" crossorigin="anonymous"></script>
 </head>
-<body>    
+
+<body>
     <div class="notification-tooltip"></div>
     <div class="notification visible-no">
-        <p class="text">Bienvenido a mi Portfolio Web, aca encontraras mis proyectos de Github. Si necesitas un contacto mas directo puedes usar mi e-mail: 
+        <p class="text">Bienvenido a mi Portfolio Web, aca encontraras mis proyectos de Github. Si necesitas un contacto
+            mas directo puedes usar mi e-mail:
             <a class="notification-copy">8.blanco@proton.me</a>
         </p>
         <a class="notification-close">&times;</a>
     </div>
 
     <div class="all-page">
-        
+
         <div class="sidebar">
-            <div class="portfolio">Portfolio Web</div>
-            <div class="nombre">Lautaro J. Blanco</div>
+            <div class="header">
+                <div class="portfolio">Portfolio Web</div>
+                <div class="nombre">Lautaro J. Blanco</div>
+            </div>
+
+            <div class="contacto">
+                <p>Cel: +543416425220</p>
+                <p>Email: 8.blanco@proton.me</p>
+                <br>
+                <p style="font-size: .8vw;">Rosario, Santa Fe, Argentina</p>
+            </div>
+
+            <div class="description">
+                <p>
+                    Desarrollador web autodidacta con experiencia en frontend (HTML, CSS, JavaScript) y
+                    conocimientos en backend (Python/Django/Flask, Node.js). Enfocado en UX/UI y diseño de interacción,
+                    con capacidad para crear experiencias digitales atractivas y funcionales.
+                </p>
+
+                <p>
+                    Me caracterizo por la resolución de problemas, el aprendizaje continuo y la capacidad de trabajar tanto en equipo como de manera autónoma. Busco mi primera experiencia formal en el campo de la programación, aportando mis conocimientos y entusiasmo al crecimiento de la empresa.
+                </p>
+            </div>
+
+            <div class="skills">
+                <!-- Barra de HTML -->
+                <div class="skill-lang">
+                    <div class="skill-name">HTML</div>
+                    <div class="progress-container">
+                        <div class="progress-bar html-bar"></div>
+                    </div>
+                    <span>(90%)</span>
+                </div>
+
+                <!-- Barra de CSS -->
+                <div class="skill-lang">
+                    <div class="skill-name">CSS</div>
+                    <div class="progress-container">
+                        <div class="progress-bar css-bar"></div>
+                    </div>
+                    <span>(90%)</span>
+                </div>
+
+                <!-- Barra de Python -->
+                <div class="skill-lang">
+                    <div class="skill-name">Python</div>
+                    <div class="progress-container">
+                        <div class="progress-bar python-bar"></div>
+                    </div>
+                    <span>(50%)</span>
+                </div>
+
+                <!-- Barra de SQL -->
+                <div class="skill-lang">
+                    <div class="skill-name">SQL</div>
+                    <div class="progress-container">
+                        <div class="progress-bar sql-bar"></div>
+                    </div>
+                    <span>(50%)</span>
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="detalles">Pagina web creada con HTML5, CSS3 & JS.</i></div>
+                <div class="links"><i class="fa-brands fa-linkedin"></i> <i class="fa-brands fa-square-github"></i> <i class="fa-brands fa-square-whatsapp"></i> </div>
+            </div>
+
         </div>
 
         <div class="content">
-            ejemplo de contenido
+            <div class="proyectos">
+                
+                <div class="cards repvial">
+
+                    <img src="./assets/img/RepVial.png" alt="Repuestos Viales">
+
+                    <div class="text">
+                        <h2>Repuestos Viales <span>Adrian A. Blanco</span></h2>
+
+                        <p>Empresa familiar dedicada a la venta de repuestos para maquinas viales.</p>
+
+                        <div class="buttons">
+                            <a href="http://www.repuestos-viales.com/" target="_blank" rel="noopener noreferrer">Visitar pagina</a>
+                            <a href="#">Ver Proyecto</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cards repvial">
+
+                    <img src="./assets/img/RepVial.png" alt="Repuestos Viales">
+
+                    <div class="text">
+                        <h2>Repuestos Viales <span>Adrian A. Blanco</span></h2>
+
+                        <p>Empresa familiar dedicada a la venta de repuestos para maquinas viales.</p>
+
+                        <div class="buttons">
+                            <a href="#">Visitar Pagina</a>
+                            <a href="#">Ver Proyecto</a>
+                        </div>
+                    </div>
+
+                </div>
+                
+
+            </div>
         </div>
+
+        <div class="footer visible-no">Proximamente mas proyectos...</div>
     </div>
 
     <script src="./assets/js/notification.js"></script>
 </body>
+
 </html>

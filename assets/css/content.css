@@ -1,9 +1,71 @@
-:root{
+:root {
     --content-bg: rgb(100, 100, 100);
 }
 
-.content{
-    background-color: var(--content-bg);
-    width: 75vw;
-    height: 150vh;
+.content {
+    width: 60vw;
+    height: auto;
+    color: #fff;
+    margin-left: 24.5vw;
+}
+
+.content .proyectos {
+    margin: 10vh 5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .proyectos .cards:not(:first-child) {
+    margin-top: 10vh;
+}
+
+.content .proyectos .cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1vw;
+    height: 20vh;
+    background-color: #333;
+}
+
+.content .proyectos .cards img {
+    width: 20%;
+    height: 20vh;
+    background-color: #fff;
+    border-radius: 1vw 0 0 1vw;
+}
+
+.content .proyectos .cards .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'tomorrow';
+    text-align: center;
+    width: 85%;
+    height: 100%;
+}
+
+.content .proyectos .cards .text h2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.content .proyectos .cards .text h2 span{
+    font-size: 1vw;
+    font-family: 'quicksand';
+    font-weight: 100;
+    margin-bottom: 2vh;
+}
+
+.content .proyectos .cards .text a{
+    color: white;
+    background-color: rgb(36, 36, 36);
+    text-decoration: none;
+    border-radius: 1vh;
+    padding: 1vh 2vw;
+}
+
+.content .proyectos .cards .text a:not(:first-child){
+    margin: 0 0 0 2vw;
 }
