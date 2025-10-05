@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shefter</title>
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/notification.css">
+    <link rel="stylesheet" href="./assets/css/sidebar.css">
+    <link rel="stylesheet" href="./assets/css/content.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+
+    <!--FontAwesome Script-->
+    <script src="https://kit.fontawesome.com/58281e3fd2.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <style>
-        body{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 3vw;
-            color: #888;
-            background-color: #ddd;
-            text-align: center;
-            font-family: monospace;
-        }
-    </style>
-    SHEFTER-2 EXAMPLE PAGE
+<body>    
+    <div class="notification-tooltip"></div>
+    <div class="notification visible-no">
+        <p class="text">Bienvenido a mi Portfolio Web, aca encontraras mis proyectos de Github. Si necesitas un contacto mas directo puedes usar mi e-mail: 
+            <a class="notification-copy">8.blanco@proton.me</a>
+        </p>
+        <a class="notification-close">&times;</a>
+    </div>
+
+    <div class="all-page">
+
+    </div>
+
+    <script src="./assets/js/notification.js"></script>
 </body>
 </html>
